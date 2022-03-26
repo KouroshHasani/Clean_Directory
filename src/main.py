@@ -2,6 +2,9 @@ import shutil
 from collections import defaultdict
 from pathlib import Path
 
+from src.data import DATA_DIR
+
+
 class Manage_Directory:
     def __init__(self, directory, dest=None):
         """
@@ -10,28 +13,24 @@ class Manage_Directory:
         """
 
         self.directory = Path(directory)
-        self.class_names = {
-            '.csv': 'data',
-            '.json': 'data',
-            '.srt': 'data',
-            '.pdf': 'documents',
-            '.txt': 'documents',
-            '.docx': 'documents',
-            '.ttf': 'fonts',
-            '.otf': 'fonts',
-            '.webm': 'videos',
-            '.pptx': 'presentation',
-            '.exe': 'exe',
-            '.jpg': 'pictures',
-            '.zip': 'compressed',
-            }
+        if not self.directory.exists():
+            raise FileNotFoundError(f"{self.directory} dose not exist")
+        
+        self.class_names = {}
+        path_ = DATA_DIR / "AllFormatTypes.csv"
+        with open(path_, encoding='utf-8-sig') as fp:
+            for line in fp:
+                format_, class_ = line.split(',')
+                format_ = format_.strip()
+                class_ = class_.strip()
+                self.class_names[format_] = class_
         
         if dest == None:
             self.dest = Path(directory)
 
         else:
             self.dest = Path(dest)
-
+    
 
 
     def stat(self) -> dict:
