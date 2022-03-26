@@ -1,6 +1,9 @@
 import shutil
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+from loguru import logger
 
 from src.data import DATA_DIR
 
@@ -12,10 +15,11 @@ class Manage_Directory:
         :param dest: Path of the folder that you want to move files to, None means the curent directory
         """
 
+        logger.info('Load data')
         self.directory = Path(directory)
         if not self.directory.exists():
             raise FileNotFoundError(f"{self.directory} dose not exist")
-        
+
         self.class_names = {}
         path_ = DATA_DIR / "AllFormatTypes.csv"
         with open(path_, encoding='utf-8-sig') as fp:
@@ -24,51 +28,48 @@ class Manage_Directory:
                 format_ = format_.strip()
                 class_ = class_.strip()
                 self.class_names[format_] = class_
-        
+
         if dest == None:
             self.dest = Path(directory)
 
         else:
             self.dest = Path(dest)
-    
+
 
 
     def stat(self) -> dict:
-        """
-        Returns statistics by files extention
-        """
+        """ Returns statistics by files extention """
 
+        logger.info('Calculating...')
         file_ext = defaultdict(int)
 
         for file in self.directory.iterdir():
             file_ext[file.suffix] += 1
 
         return file_ext
-    
+
 
     def clasify (self):
-        """
-        Clasifies all file that exists in a directory
-        """
+        """ Clasifies all file that exists in a directory """
 
+        logger.info('Moving files...')
         self.dest.mkdir(exist_ok=True)
 
         for file in self.directory.iterdir():
             if file.is_dir():
                 continue
-            
-            if file.suffix in self.class_names:                    
+
+            if file.suffix in self.class_names:
                 dest_dir = self.dest / self.class_names[file.suffix]
                 dest_dir.mkdir(exist_ok=True)
                 shutil.move(str(file), str(dest_dir))
-            
+
             else:
                 dest_dir = self.dest / 'others'
                 dest_dir.mkdir(exist_ok=True)
-                shutil.move(str(file), str(dest_dir)) 
+                shutil.move(str(file), str(dest_dir))
 
 
 if __name__ == '__main__':
-    clean = Manage_Directory(directory="/mnt/d/New folder (3)")
+    clean = Manage_Directory(directory=sys.argv[1]) # sys.argv is a list of terminal inputs when main.py is runed
     print(clean.stat())
-    
