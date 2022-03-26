@@ -1,0 +1,582 @@
+﻿.art,Raster image
+.arw,Raster image
+.bmp,Raster image
+.cr2,Raster image
+.crw,Raster image
+.dcm,Raster image
+.dds,Raster image
+.djvu,Raster image
+.dng,Raster image
+.exr,Raster image
+.fpx,Raster image
+.gif,Raster image
+.ico,Raster image
+.jpg,Raster image
+.jp2,Raster image
+.jpeg,Raster image
+.nef,Raster image
+.orf,Raster image
+.pcd,Raster image
+.pcx,Raster image
+.pef,Raster image
+.pgm,Raster image
+.pict,Raster image
+.png,Raster image
+.psd,Raster image
+.raf,Raster image
+.sfw,Raster image
+.tga,Raster image
+.tiff,Raster image
+.wbmp,Raster image
+.xcf,Raster image
+.yuv,Raster image
+.kdc,Raster image
+.pct,Raster image
+.sr2,Raster image
+.tif,Raster image
+.hdr,Raster image
+.webp,Raster image
+.nrw,Raster image
+.plist,Raster image
+.ithmb,Raster image
+.thm,Raster image
+.pspimage,Raster image
+.mac,Raster image
+.heic,Raster image
+.rwl,Raster image
+.flif,Raster image
+.avif,Raster image
+.raw,Raster image
+.pictclipping,Raster image
+.jxr,Raster image
+.emf,Vector image
+.eps,Vector image
+.svg,Vector image
+.wpg,Vector image
+.ai,Vector image
+.svgz,Vector image
+.wmf,Vector image
+.odg,Vector image
+.cdr,Vector image
+.vsd,Vector image
+.std,Vector image
+.pd,Vector image
+.emz,Vector image
+.mix,Vector image
+.otg,Vector image
+.cvs,Vector image
+.gvdesign,Vector image
+.pdf,Document
+.txt,Document
+.doc,Document
+.odt,Document
+.xps,Document
+.chm,Document
+.rtf,Document
+.sxw,Document
+.docx,Document
+.wpd,Document
+.wps,Document
+.docm,Document
+.hwp,Document
+.pub,Document
+.xml,Document
+.log,Document
+.oxps,Document
+.vnt,Document
+.dot,Document
+.pages,Document
+.m3u,Document
+.dotx,Document
+.shs,Document
+.msg,Document
+.odm,Document
+.pmd,Document
+.vmg,Document
+.eml,Document
+.tex,Document
+.wp5,Document
+.csk,Document
+.fdxt,Document
+.pages.zip,Document
+.adoc,Document
+.afpub,Document
+.mpc,Audio
+.aac,Audio
+.flac,Audio
+.m4a,Audio
+.mmf,Audio
+.mp3,Audio
+.ogg,Audio
+.wav,Audio
+.wma,Audio
+.mid,Audio
+.amr,Audio
+.ape,Audio
+.au,Audio
+.caf,Audio
+.gsm,Audio
+.oma,Audio
+.qcp,Audio
+.vqf,Audio
+.ra,Audio
+.aif,Audio
+.mp2,Audio
+.m4p,Audio
+.awb,Audio
+.m4r,Audio
+.ram,Audio
+.asx,Audio
+.mpga,Audio
+.aiff,Audio
+.koz,Audio
+.m4b,Audio
+.kar,Audio
+.iff,Audio
+.midi,Audio
+.3ga,Audio
+.opus,Audio
+.aup,Audio
+.xspf,Audio
+.aifc,Audio
+.rta,Audio
+.cda,Audio
+.m3u8,Audio
+.mpa,Audio
+.aa,Audio
+.aax,Audio
+.oga,Audio
+.nfa,Audio
+.adpcm,Audio
+.cdo,Audio
+.flp,Audio
+.aimppl,Audio
+.4mp,Audio
+.mui,Audio
+.avi,Video
+.mpeg,Video
+.m4v,Video
+.mov,Video
+.mp4,Video
+.wmv,Video
+.mpg,Video
+.swf,Video
+.3gp,Video
+.3g2,Video
+.mkv,Video
+.ogv,Video
+.webm,Video
+.asf,Video
+.ts,Video
+.mxf,Video
+.rm,Video
+.thp,Video
+.mts,Video
+.rmvb,Video
+.f4v,Video
+.mod,Video
+.vob,Video
+.h264,Video
+.flv,Video
+.3gpp,Video
+.divx,Video
+.qt,Video
+.amv,Video
+.dvsd,Video
+.m2ts,Video
+.ifo,Video
+.mswmm,Video
+.srt,Video
+.cpi,Video
+.wlmp,Video
+.vpj,Video
+.ced,Video
+.vep,Video
+.veg,Video
+.264,Video
+.dav,Video
+.pds,Video
+.dir,Video
+.arf,Video
+.mepx,Video
+.xesc,Video
+.bik,Video
+.nfv,Video
+.tvs,Video
+.imoviemobile,Video
+.rcproject,Video
+.esp3,Video
+.vproj,Video
+.aep,Video
+.camproj,Video
+.camrec,Video
+.cmproj,Video
+.cmrec,Video
+.modd,Video
+.mproj,Video
+.osp,Video
+.trec,Video
+.g64,Video
+.vro,Video
+.braw,Video
+.mse,Video
+.pz,Video
+.cbr,eBook
+.epub,eBook
+.fb2,eBook
+.lit,eBook
+.lrf,eBook
+.mobi,eBook
+.tcr,eBook
+.prc,eBook
+.azw3,eBook
+.azw,eBook
+.acsm,eBook
+.opf,eBook
+.mbp,eBook
+.cbz,eBook
+.apnx,eBook
+.cbt,eBook
+.vbk,eBook
+.ibooks,eBook
+.kfx,eBook
+.dxf,CAD
+.dwg,CAD
+.3dm,CAD
+.3ds,CAD
+.max,CAD
+.obj,CAD
+.stp,CAD
+.odp,Presentation
+.ppt,Presentation
+.pptx,Presentation
+.pps,Presentation
+.ppsx,Presentation
+.pptm,Presentation
+.key,Presentation
+.flipchart,Presentation
+.key.zip,Presentation
+.ods,Spreadsheet
+.xls,Spreadsheet
+.xlsx,Spreadsheet
+.csv,Spreadsheet
+.wks,Spreadsheet
+.xlsm,Spreadsheet
+.xlsb,Spreadsheet
+.xlr,Spreadsheet
+.wk3,Spreadsheet
+.numbers,Spreadsheet
+.pdb,Database
+.dbf,Database
+.bup,Database
+.db,Database
+.crypt,Database
+.accdb,Database
+.mdb,Database
+.sql,Database
+.zip,Archive
+.rar,Archive
+.7z,Archive
+.bz2,Archive
+.gz,Archive
+.tar,Archive
+.snb,Archive
+.jar,Archive
+.apk,Archive
+.mht,Archive
+.tgz,Archive
+.gzip,Archive
+.crx,Archive
+.deb,Archive
+.rpm,Archive
+.sitx,Archive
+.tar.gz,Archive
+.zipx,Archive
+.sit,Archive
+.ace,Archive
+.dd,Archive
+.r01,Archive
+.mpkg,Archive
+.pup,Archive
+.tbz,Archive
+.html,Website
+.htm,Website
+.xhtml,Website
+.aspx,Website
+.php,Website
+.js,Website
+.nzb,Website
+.json,Website
+.do,Website
+.css,Website
+.webloc,Website
+.xfdl,Website
+.asp,Website
+.cer,Website
+.cfm,Website
+.csr,Website
+.jsp,Website
+.rss,Website
+.cfml,Website
+.mhtml,Website
+.webarchive,Website
+.ps,Misc
+.ttf,Misc
+.pes,Misc
+.otf,Misc
+.ass,Misc
+.rem,Misc
+.dmg,Misc
+.jad,Misc
+.tmp,Misc
+.url,Misc
+.cue,Misc
+.ics,Misc
+.img,Misc
+.bak,Misc
+.part,Misc
+.tec,Misc
+.kmz,Misc
+.torrent,Misc
+.hqx,Misc
+.msi,Misc
+.crdownload,Misc
+.dem,Misc
+.fnt,Misc
+.fon,Misc
+.gam,Misc
+.gpx,Misc
+.iso,Misc
+.kml,Misc
+.mdf,Misc
+.mim,Misc
+.nes,Misc
+.plugin,Misc
+.rom,Misc
+.sav,Misc
+.toast,Misc
+.uue,Misc
+.vcd,Misc
+.idx,Misc
+.epc,Misc
+.map,Misc
+.dbx,Misc
+.dic,Misc
+.hex,Misc
+.qxp,Misc
+.grp,Misc
+.8bi,Misc
+.cmf,Misc
+.ori,Misc
+.bfc,Misc
+.gho,Misc
+.mtb,Misc
+.t65,Misc
+.xll,Misc
+.dao,Misc
+.flt,Misc
+.cff,Misc
+.bbl,Misc
+.bib,Misc
+.bibtex,Misc
+.enl,Misc
+.ens,Misc
+.enw,Misc
+.marc,Misc
+.mrc,Misc
+.ris,Misc
+.enc,Misc
+.approj,Misc
+.mime,Misc
+.hht,Misc
+.rc,Developer
+.p,Developer
+.d,Developer
+.c,Developer
+.class,Developer
+.cpp,Developer
+.cs,Developer
+.dtd,Developer
+.fla,Developer
+.h,Developer
+.java,Developer
+.lua,Developer
+.m,Developer
+.pl,Developer
+.py,Developer
+.sh,Developer
+.sln,Developer
+.swift,Developer
+.vcxproj,Developer
+.xcodeproj,Developer
+.asc,Developer
+.bas,Developer
+.asm,Developer
+.cbl,Developer
+.vbp,Developer
+.iwb,Developer
+.pb,Developer
+.yml,Developer
+.pika,Developer
+.s19,Developer
+.xt,Developer
+.suo,Developer
+.fsproj,Developer
+.pbj,Developer
+.pbxuser,Developer
+.pyw,Developer
+.xq,Developer
+.cd,Developer
+.sb,Developer
+.sb2,Developer
+.ise,Developer
+.kv,Developer
+.cod,Developer
+.nib,Developer
+.pwn,Developer
+.b,Developer
+.hpp,Developer
+.apa,Developer
+.bet,Developer
+.bluej,Developer
+.erb,Developer
+.fxc,Developer
+.m4,Developer
+.owl,Developer
+.sma,Developer
+.trx,Developer
+.vc,Developer
+.def,Developer
+.xap,Developer
+.o,Developer
+.pas,Developer
+.qpr,Developer
+.resources,Developer
+.vbproj,Developer
+.vbx,Developer
+.xib,Developer
+.md,Developer
+.ccc,Developer
+.wwp,Developer
+.ss,Developer
+.cur,System
+.ani,System
+.dvd,System
+.dat,System
+.lnk,System
+.dll,System
+.nfo,System
+.prop,System
+.bin,System
+.cab,System
+.cpl,System
+.deskthemepack,System
+.dmp,System
+.drv,System
+.icns,System
+.sys,System
+.cat,System
+.hlp,System
+.icl,System
+.bud,System
+.dev,System
+.ffl,System
+.ffo,System
+.pol,System
+.ion,System
+.pnf,System
+.dit,System
+.htt,System
+.nb0,System
+.mlc,System
+.bash_history,System
+.ebd,System
+.fota,System
+.reg,System
+.bashrc,System
+.hiv,System
+.bash_profile,System
+.nt,System
+.qvm,System
+.iconpackage,System
+.iptheme,System
+.pck,System
+.hdmp,System
+.mdmp,System
+.sdt,System
+.dif,Data
+.vcf,Data
+.itl,Data
+.one,Data
+.ged,Data
+.keychain,Data
+.sdf,Data
+.tax2014,Data
+.efx,Data
+.clp,Data
+.gbr,Data
+.tax2012,Data
+.mtw,Data
+.gms,Data
+.ip,Data
+.tax2016,Data
+.quickendata,Data
+.adt,Data
+.cma,Data
+.fcpevent,Data
+.flo,Data
+.gcw,Data
+.i5z,Data
+.qb2011,Data
+.vcs,Data
+.cel,Data
+.aae,Data
+.nfs,Data
+.nfi,Data
+.xmind,Data
+.bok,Data
+.tax,Data
+.ova,Data
+.ovf,Data
+.rte,Data
+.rvt,Data
+.scr,Executables
+.exe,Executables
+.ipa,Executables
+.app,Executables
+.bat,Executables
+.cgi,Executables
+.com,Executables
+.gadget,Executables
+.pif,Executables
+.vb,Executables
+.wsf,Executables
+.cmd,Executables
+.ds,Executables
+.air,Executables
+.mdi,Page Layout
+.indd,Page Layout
+.p65,Page Layout
+.qxd,Page Layout
+.dtp,Page Layout
+.rels,Page Layout
+.caj,Page Layout
+.eddx,Page Layout
+.lbl,Page Layout
+.act,Settings
+.inf,Settings
+.ini,Settings
+.cfg,Settings
+.pkg,Settings
+.cdt,Settings
+.icm,Settings
+.gid,Settings
+.api,Settings
+.dun,Settings
+.ht,Settings
+.prf,Settings
+.fm3,Settings
+.rdf,Settings
+.asw,Settings
+.mind,Settings
+.tscproj,Settings

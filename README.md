@@ -9,5 +9,5 @@ export PYTHONPATH=${PWD}`
 
 Then run this code:
 ```
-python src/chat_statistics/stats.py`
+python src/chat_statistics/main.py`
 ```
