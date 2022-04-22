@@ -65,11 +65,11 @@ class Manage_Directory:
                 shutil.move(str(file), str(dest_dir))
 
             else:
-                dest_dir = self.dest / 'others'
+                dest_dir = self.dest / 'Others'
                 dest_dir.mkdir(exist_ok=True)
                 shutil.move(str(file), str(dest_dir))
 
 
 if __name__ == '__main__':
     clean = Manage_Directory(directory=sys.argv[1]) # sys.argv is a list of terminal inputs when main.py is runed
-    print(clean.stat())
+    print(clean.clasify())
