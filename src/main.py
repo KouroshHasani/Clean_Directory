@@ -9,16 +9,11 @@ from src.data import DATA_DIR
 
 
 class Manage_Directory:
-    def __init__(self, directory, dest=None):
+    def __init__(self):
         """
         :param directory: directory path
         :param dest: Path of the folder that you want to move files to, None means the curent directory
         """
-
-        logger.info('Load data')
-        self.directory = Path(directory)
-        if not self.directory.exists():
-            raise FileNotFoundError(f"{self.directory} dose not exist")
 
         self.class_names = {}
         path_ = DATA_DIR / "AllFormatTypes.csv"
@@ -29,16 +24,14 @@ class Manage_Directory:
                 class_ = class_.strip()
                 self.class_names[format_] = class_
 
-        if dest == None:
-            self.dest = Path(directory)
-
-        else:
-            self.dest = Path(dest)
-
-
 
     def stat(self) -> dict:
         """ Returns statistics by files extention """
+
+        logger.info('Load data')
+        self.directory = Path(directory)
+        if not self.directory.exists():
+            raise FileNotFoundError(f"{self.directory} dose not exist")
 
         logger.info('Calculating...')
         file_ext = defaultdict(int)
@@ -49,8 +42,18 @@ class Manage_Directory:
         return file_ext
 
 
-    def clasify (self):
+    def __call__ (self, directory, dest=None):
         """ Clasifies all file that exists in a directory """
+
+        logger.info('Load data')
+        self.directory = Path(directory)
+        if not self.directory.exists():
+            raise FileNotFoundError(f"{self.directory} dose not exist")
+
+        if dest == None:
+            self.dest = Path(directory)
+        else:
+            self.dest = Path(dest)
 
         logger.info('Moving files...')
         self.dest.mkdir(exist_ok=True)
@@ -70,6 +73,16 @@ class Manage_Directory:
                 shutil.move(str(file), str(dest_dir))
 
 
+
 if __name__ == '__main__':
-    clean = Manage_Directory(directory=sys.argv[1]) # sys.argv is a list of terminal inputs when main.py is runed
-    print(clean.clasify())
+    clean = Manage_Directory() # sys.argv is a list of terminal inputs when main.py is runed
+
+    if len(sys.argv) == 2:
+        clean(directory=sys.argv[1])
+
+    if len(sys.argv) == 3:
+        clean(directory=sys.argv[1], dest=sys.argv[2])
+
+    else:
+        raise IOError('First argument is your files path and second argument should be the path of your preferred destination.\
+        If the second argument is not defined, it means the destination is the same as the first argument.')
