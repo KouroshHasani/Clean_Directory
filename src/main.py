@@ -25,8 +25,10 @@ class Manage_Directory:
                 self.class_names[format_] = class_
 
 
-    def stat(self) -> dict:
-        """ Returns statistics by files extention """
+    def stat(self, directory, by_format_class=True) -> dict:
+        """ Returns statistics by files extention
+        :param directory: Directory path
+        """
 
         logger.info('Load data')
         self.directory = Path(directory)
@@ -39,7 +41,12 @@ class Manage_Directory:
         for file in self.directory.iterdir():
             file_ext[file.suffix] += 1
 
-        return file_ext
+        if by_format_class:
+            for item, val in file_ext.items():
+                print(f"{self.class_names[item]:20} {val}")
+        else:
+            for item, val in file_ext.items():
+                print(f"{item:20} {val}")
 
 
     def __call__ (self, directory, dest=None):
@@ -76,12 +83,13 @@ class Manage_Directory:
 
 if __name__ == '__main__':
     clean = Manage_Directory() # sys.argv is a list of terminal inputs when main.py is runed
+    print(len(sys.argv))
 
     if len(sys.argv) == 2:
-        clean(directory=sys.argv[1])
+        clean.stat(directory=sys.argv[1])
 
-    if len(sys.argv) == 3:
-        clean(directory=sys.argv[1], dest=sys.argv[2])
+    elif len(sys.argv) == 3:
+        clean.stat(directory=sys.argv[1], dest=sys.argv[2])
 
     else:
         raise IOError('First argument is your files path and second argument should be the path of your preferred destination.\
